@@ -1,0 +1,70 @@
+{
+  "name": "InstaPyGUI",
+  "productName": "InstaPy GUI",
+  "version": "0.5.0",
+  "description": "A minimal InstaPy GUI",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "build",
+    "dist-x": "build -ml"
+  },
+  "repository": "https://github.com/MohanSha/electron-InstaPy-GUI",
+  "keywords": [
+    "Electron",
+    "InstaPy",
+    "GUI"
+  ],
+  "author": {
+    "name": "MohanSha",
+    "email": "mohansha@outlook.com",
+    "url": "https://github.com/MohanSha"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "~1.6.2",
+    "electron-builder": "^19.34.2"
+  },
+  "dependencies": {
+    "dedent-js": "^1.0.1",
+    "electron-settings": "^3.1.2",
+    "electron-store": "^1.3.0",
+    "file-exists": "^5.0.0",
+    "fs-jetpack": "^1.2.0",
+    "jquery": "^3.2.1",
+    "python-shell": "^0.4.0",
+    "terminate": "^2.1.0",
+    "jsesc": "^0.3.0"
+  },
+  "build": {
+    "appId": "com.mohansha.instapygui",
+    "win": {
+      "target": "NSIS",
+      "icon": "build/icon.ico"
+    },
+    "mac": {
+      "category": "public.app-category.utility"
+    },
+    "dmg": {
+      "contents": [
+        {
+          "x": 110,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "linux": {
+      "category": "Utilty",
+      "target": [
+        "deb"
+      ],
+      "icon": "build/"
+    }
+  }
+}
