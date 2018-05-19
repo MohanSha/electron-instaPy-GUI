@@ -1,0 +1,66 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+ .titlebar {
+  padding: 1rem 0 0 0!important;
+} 
+.titlebar button {
+  padding: 3px!important;
+  background-color: white!important;
+  -webkit-app-region: no-drag; 
+}
+.headers {
+  padding-top: 0 !important;
+}
+.headers input {
+  -webkit-app-region: no-drag;
+}
+.ui.checkbox {
+  margin: 0em 0em 0.28571429rem 0em;
+}
+
+/* Custom Label */
+label {
+  font-size: 0.9em !important;
+  user-select: none;
+}
+.ui.checkbox label {
+  cursor: pointer;
+}
+
+/* Custom message */
+.ui.message#file-exists {
+  background: rgba(74, 234, 23, 0.33);
+}
+.ui.message#file-not-exists {
+  background: rgba(234, 23, 23, 0.22);
+}
+
+/* Custom segment */
+.ui.segment {
+    user-select: none;
+}
+
+/* Custom Scrollbar Styiling */
+::-webkit-scrollbar {
+  width: 8px; /* 1px wider than Lion. */
+  /* This is more usable for users trying to click it. */
+  background-color: rgba(0,0,0,0);
+  -webkit-border-radius: 100px;
+}
+/* hover effect for both scrollbar area, and scrollbar 'thumb' */
+::-webkit-scrollbar:hover {
+  background-color: rgba(0, 0, 0, 0.09);
+}
+
+/* The scrollbar 'thumb' ...that marque oval shape in a scrollbar */
+::-webkit-scrollbar-thumb:vertical {
+  /* This is the EXACT color of Mac OS scrollbars. 
+     Yes, I pulled out digital color meter */
+  background: rgba(0,0,0,0.5);
+  -webkit-border-radius: 100px;
+}
+::-webkit-scrollbar-thumb:vertical:active {
+  background: rgba(0,0,0,0.61); /* Some darker color when you click it */
+  -webkit-border-radius: 100px;
+}
